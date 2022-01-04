@@ -5,8 +5,8 @@ import { NextPage } from 'next';
 
 const CurrencyList = ({ currencies }) => {
   return (
-    <div className="bg-gradient-to-r from-green-500 to-blue-500 rounded-2xl">
-      <table className="w-full table-auto">
+    <div className="bg-blue-700 bg-opacity-80 rounded-2xl">
+      <table className="w-full table-auto text-white">
         <thead>
           <tr>
             <th></th>
@@ -25,9 +25,9 @@ const CurrencyList = ({ currencies }) => {
           </tr>
         </thead>
         {currencies?.map((currency, index) => (
-          <tbody key={index} className="table-auto ">
+          <tbody key={index} className="table-auto cursor-pointer">
             <Link href={`/currency/${currency.id}`} passHref>
-              <tr>
+              <tr className="hover:bg-gray-600">
                 <td className="px-1 py-1 20 text-center">
                   <Image
                     alt="Logo"
