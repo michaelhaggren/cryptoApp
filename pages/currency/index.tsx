@@ -28,7 +28,7 @@ const Currency: NextPage = ({ props }: any) => {
       <div className="grid h-screen md:grid-rows-4 md:grid-cols-5 grid-cols-1 mx-auto px-16 py-16">
         <div className="col-start-2 text-center col-span-3 text-black font-semibold">
           <h1 className="text-4xl">
-            CRYPTOCURRENCIE<span className="text-purple-700">$</span>
+            CRYPTOCURRENCIE<span className="text-purple-600">$</span>
           </h1>
           <div
             id="search"
